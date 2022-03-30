@@ -23,15 +23,13 @@
 // Returns 0 or 1 randomly
 int generate_rand_num_0_to_1() {
   int rand_num = rand();
-  printf("Rand: %d %d\n", rand_num, rand_num % 2);
-  return rand() / (RAND_MAX / 2 + 1);
+  return rand() % 2;
 }
 
 // Returns 0, 1, 2, 3, 4, 5 or 6 randomly
 int generate_rand_num_0_to_6() {
   int rand_num = rand();
-  printf("Rand6: %d e %d\n", rand_num, rand_num % 7);
-  return rand() / (RAND_MAX / 7 + 1);
+  return rand() % 7;
 }
 
 bool is_atk_moving_up(direction_t dir) {

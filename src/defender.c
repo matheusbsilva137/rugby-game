@@ -79,7 +79,6 @@ direction_t execute_defender_strategy(
   } else {
     if (!moved_left && is_moving_left(best_direction)) {
       // If the defender could move left (for the first time) in the last turn, choose a vertical direction
-      printf("Moved left!\n");
       moved_left = true;
 
       if (get_spy_number_uses(attacker_spy) == 0) {

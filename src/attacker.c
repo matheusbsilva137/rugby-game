@@ -88,7 +88,6 @@ direction_t execute_attacker_strategy(
         }
       } else {
         // The attacker must now start moving horizontally
-        printf("Start moving horizontally\n");
         move_vertical++;
         best_direction = move_atk_horizontally(is_up_main_dir);
       }
